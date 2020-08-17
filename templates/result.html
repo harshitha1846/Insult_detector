@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<style>
+h3 {
+	position:relative;
+	left:580px;
+	margin:40px
+}
+</style>
+</head>
+<body>
+<h1>Insult Detector</h1>
+<form action = "http://localhost:5000/success" method = "post">
+   <input type='text' name="message" placeholder="Enter your Comment" size='35' required="required" onkeydown="if (event.keyCode == 13) { alert('press predict button');return false;}"/></br>
+
+	</input>
+	</br></br>
+	<input type="submit" value="Predict">
+</form>
+	{% if prediction == 0%}
+	<h3 style="color:red;">Insult</h3>
+	{% elif prediction == 1%}
+	<h3 style="color:green;">Not a Insult</h3>
+	{% endif %}
+</body>
+</html>
