@@ -27,3 +27,9 @@ We obtained our annotated dataset from the social media websites. The training d
 consists of nearly 5000 comments which are labelled as positive and negative. This problem is
 treated as binary classification problem and using various machine learning algorithms like Logistic
 regression, SVM have been used in the model.But before that we have done some preprocessing techniques(nlp) on text such that it is feasible to feed to algorithm.
+## Reqirements
+ - flask
+ - sklearn
+ - nltk
+ - numpy
+ 
