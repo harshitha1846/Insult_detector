@@ -6,9 +6,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-import numpy as np
-from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import chi2		
+import numpy as np		
 from sklearn import svm    			
 from sklearn.model_selection import train_test_split        
 from sklearn.linear_model import LogisticRegression
